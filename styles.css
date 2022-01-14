@@ -1,0 +1,38 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+.canvas-container {
+  position: relative;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid tomato;
+}
+
+.canvas-container::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.canvas-container canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
