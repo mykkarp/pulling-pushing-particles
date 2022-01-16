@@ -13,25 +13,14 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #111;
+  cursor: none;
 }
 
 .canvas-container {
-  position: relative;
-  width: 90%;
-  border-radius: 10px;
-  border: 1px solid tomato;
-}
-
-.canvas-container::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .canvas-container canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: block;
 }
